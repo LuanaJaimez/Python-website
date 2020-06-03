@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    {% extends "layout.html" %}
+
+    {% block content %}
+
+    <h1>Movimientos Artísticos</h1>
+    <h2>Esta página está destinada a mostrar información sobre arte</h2>
+    <br>
+
+    <section>
+        <article>
+            <!-- hgroup para determinar la jerarquia de los h1 (titulos) -->
+            <hgroup>
+                <h3>Cubismo</h3>
+                <h5>Movimiento artistico (1907 - 1914)</h5>
+            </hgroup>
+            <time datetime="24-10-2019">Publicado 24-10-2019</time>
+            <p>El concepto de Cubismo ("pequeños cubos") fui acuñado por el Frances Luis Vauxcelles, quien criticaba las pinturas de Braque.</p>
+            <p>Este movimiento da pie al resto de las vanguardias europeas del SigloXX y rompe con el Estatuto renacentista. También...</p>
+            <ul>
+                <li>Rompe con la norma básica de la composición</li>
+                <li>Cambia la profundidad, la descripción de la naturaleza y la perspectiva:</li>
+                <ul>
+                    <li>Las figuras se reducen a formas geométricas.</li>
+                    <li>Anulación de la perspectiva.</li>
+                    <li>Perspectiva múltiple</li>
+                </ul>
+            </ul>
+            <!-- Para añadir una imagen. Se necesita poner el nombre de la imagen y se pueden hacer carpetas con las imaganes dentro del proyecto -->
+            <!-- <img src="src/static/imagenes/laRoulette.jpeg"> -->
+            <img src="https://okdiario.com/img/2017/09/04/cubismo-3-e1504513725476.jpg" border="1" width="400" height="300">
+            <footer>
+                <p><cite>"La Roulette" | Pintura de Jean | Metzinger, 1924</cite></p>
+            </footer>
+            <!-- Indicar que el url es un sitio de internet -->
+            <address>
+                <a href="https://es.wikipedia.org/wiki/Cubismo"> Redireccionar a Wikipedia para más información </a>
+            </address>
+        </article>
+        <br>
+        
+        <article>
+            <hgroup>
+                <h3>Titulo del segundo articulo</h3>
+                <h5>Subtitulo del segundo articulo</h5>
+            </hgroup>
+            <time datetime="12-10-2018">Publicado 12-10-2018</time>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati praesentium eius unde possimus vel eligendi non. <cite>Labore deserunt, pariatur voluptatem </cite> accusamus tenetur cum reiciendis. Quae eius doloribus placeat possimus veritatis.</p>
+            <footer>
+                <p>Comentarios (10)</p>
+            </footer>
+        </article>
+    </section>
+
+    {% endblock %}
+
+</html>
